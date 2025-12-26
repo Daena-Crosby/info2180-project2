@@ -1,0 +1,111 @@
+/* ===========================
+   Responsive Styles
+   =========================== */
+
+/* Small devices (phones, <600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .topbar h1, .topbar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  table th, table td {
+    padding: 0.5rem;
+  }
+
+  .contacts table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Medium devices (tablets, 600px–900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 15px;
+  }
+
+  .topbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .search-box input {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  table th, table td {
+    padding: 0.6rem;
+  }
+}
+
+/* Large devices (desktop, >900px) */
+@media (min-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  .topbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .filters {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 250px;
+  }
+
+  table th, table td {
+    padding: 0.75rem;
+  }
+}
