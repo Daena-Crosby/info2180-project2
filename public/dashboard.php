@@ -15,20 +15,25 @@ if (!isset($_SESSION['user_id'])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dolphin CRM - Dashboard</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/script.js" defer></script>
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <script src="../assets/js/dashboard.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
+  <nav class="navbar">
     <div class="logo">
-      <img src="assets/images/image.png" alt="Dolphin CRM" style="height: 40px; width: auto;" />
+      <img src="../assets/images/image.png" alt="Dolphin CRM" />
     </div>
-    <h1>Dashboard</h1>
+    <ul class="nav-links">
+      <li><a href="dashboard.php" class="active">Dashboard</a></li>
+      <li><a href="users.php">Users</a></li>
+      <li><a href="add_user.php">New User</a></li>
+      <li><a href="account.php">Account</a></li>
+      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
+    </ul>
     <div class="actions">
-      <a href="add_contact.php" class="btn btn-primary">+ Add Contact</a>
       <a href="logout.php" class="btn btn-outline">Logout</a>
     </div>
-  </header>
+  </nav>
 
   <main class="dashboard">
     <!-- Search + Filters -->
@@ -64,6 +69,5 @@ if (!isset($_SESSION['user_id'])) {
     </section>
   </main>
 
-  <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

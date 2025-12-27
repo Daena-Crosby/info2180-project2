@@ -78,26 +78,30 @@ $updatedDate = new DateTime($contact['updated_at']);
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($contact['firstname']) ?> - Dolphin CRM</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/script.js" defer></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
 </head>
 <body>
 
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <img src="dolphin_logo.png" alt="Logo"> Dolphin CRM
-        </div>
-        <nav>
-            <a href="dashboard.php" class="active"><i class="fas fa-home"></i> Home</a>
-            <a href="add_contact.php"><i class="fas fa-user-plus"></i> New Contact</a>
-            <a href="users.php"><i class="fas fa-users"></i> Users</a>
-            <hr style="border: 0; border-top: 1px solid #374151; margin: 10px 0;">
-            <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
-        </nav>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/images/image.png" alt="Dolphin CRM" />
     </div>
+    <ul class="nav-links">
+      <li><a href="dashboard.php">Dashboard</a></li>
+      <li><a href="users.php">Users</a></li>
+      <li><a href="add_user.php">New User</a></li>
+      <li><a href="account.php">Account</a></li>
+      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
+    </ul>
+    <div class="actions">
+      <a href="logout.php" class="btn btn-outline">Logout</a>
+    </div>
+  </nav>
 
-    <div class="main-content">
+  <main class="dashboard">
+    <div class="card">
+      <div class="card-content">
         <div class="contact-header">
             <div class="profile-info">
                 <div class="avatar">

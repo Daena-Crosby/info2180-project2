@@ -64,20 +64,25 @@ $notes = $notesStmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
   <meta charset="UTF-8">
   <title>Contact Details</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/script.js" defer></script>
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+
 </head>
 <body>
-  <header class="topbar">
+  <nav class="navbar">
     <div class="logo">
-      <img src="assets/images/image.png" alt="Dolphin CRM" style="height: 40px; width: auto;" />
+      <img src="../assets/images/image.png" alt="Dolphin CRM" />
     </div>
-    <h1>Contact Details</h1>
+    <ul class="nav-links">
+      <li><a href="dashboard.php">Dashboard</a></li>
+      <li><a href="users.php">Users</a></li>
+      <li><a href="add_user.php">New User</a></li>
+      <li><a href="account.php">Account</a></li>
+      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
+    </ul>
     <div class="actions">
-      <a href="dashboard.php" class="btn btn-outline">Back to Dashboard</a>
       <a href="logout.php" class="btn btn-outline">Logout</a>
     </div>
-  </header>
+  </nav>
   <main class="dashboard">
     <div class="card">
       <div class="card-content">

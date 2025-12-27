@@ -54,22 +54,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Add User</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
 </head>
 <body>
-  <header class="topbar">
+  <nav class="navbar">
     <div class="logo">
-      <img src="assets/images/image.png" alt="Dolphin CRM" style="height: 40px; width: auto;" />
+      <img src="../assets/images/image.png" alt="Dolphin CRM" />
     </div>
-    <h1>Add User</h1>
+    <ul class="nav-links">
+      <li><a href="dashboard.php">Dashboard</a></li>
+      <li><a href="users.php">Users</a></li>
+      <li><a href="add_user.php" class="active">New User</a></li>
+      <li><a href="account.php">Account</a></li>
+      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
+    </ul>
     <div class="actions">
-      <a href="users.php" class="btn btn-outline">Back to Users</a>
       <a href="logout.php" class="btn btn-outline">Logout</a>
     </div>
-  </header>
-  <main class="dashboard">
+  </nav>
+  <main class="login-container">
     <div class="card">
+      <div class="card-header">
+        <h1>Add New User</h1>
+      </div>
       <div class="card-content">
         <?php if ($error): ?><div class="error"><?= htmlspecialchars($error) ?></div><?php endif; ?>
         <?php if ($success): ?><div class="success"><?= htmlspecialchars($success) ?></div><?php endif; ?>
