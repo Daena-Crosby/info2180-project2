@@ -1,5 +1,7 @@
 <?php
-require_once 'db_connect.php';
+require_once __DIR__ . '/../config/db_connect.php';
+require_once __DIR__ . '/../includes/functions.php';
+
 
 // The password you want to use
 $new_password = 'password123'; 

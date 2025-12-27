@@ -1,6 +1,8 @@
 <?php
 session_start();
-require_once 'config/db_connect.php';
+require_once __DIR__ . '/../config/db_connect.php';
+require_once __DIR__ . '/../includes/functions.php';
+
 
 if (!isset($_SESSION['user_id'])) {
     http_response_code(403);

@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+require_once __DIR__ . '/../config/db_connect.php';
+require_once __DIR__ . '/../includes/functions.php';
+
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
@@ -11,7 +15,8 @@ if (!isset($_SESSION['user_id'])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dolphin CRM - Dashboard</title>
-  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
   <header class="topbar">

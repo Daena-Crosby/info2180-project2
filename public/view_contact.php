@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once __DIR__ . '/../config/db_connect.php';
+require_once __DIR__ . '/../includes/functions.php';
+
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -76,7 +78,8 @@ $updatedDate = new DateTime($contact['updated_at']);
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($contact['firstname']) ?> - Dolphin CRM</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
