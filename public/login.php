@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="card">
       <div class="card-header">
         <div class="logo">
-          <img src="assets/images/image.png" alt="Dolphin CRM" />
+          <img src="../assets/images/image.png" alt="Dolphin CRM" />
         </div>
         <h1>Login</h1>
       </div>
