@@ -1,8 +1,8 @@
 # INFO2180 Project 2 – Dolphin CRM
 
 ## Group Members
-1. **Daena Crosby** – Front End  
-2. **Tonia Williams** – Database  
+1. **Daena Crosby (620162441)** – Front End  
+2. **Tonia Williams(620162352)** – Database  
 3. **Alexander Waite (620165566)** – Backend (Authentication & User Management)  
 4. **Hector Riettie (620161458)** – Backend (Contacts & Notes)  
 
