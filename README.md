@@ -3,7 +3,7 @@
 ## Group Members
 1. **Daena Crosby** – Front End  
 2. **Tonia Williams** – Database  
-3. **Alexander Waithe** – Backend (Authentication & User Management)  
+3. **Alexander Waite (620165566)** – Backend (Authentication & User Management)  
 4. **Hector Riettie (620161458)** – Backend (Contacts & Notes)  
 
 ---
@@ -32,7 +32,7 @@
 
 ---
 
-## Backend / Authentication & User Management (Alexander Waithe)
+## Backend / Authentication & User Management (Alexander Waite)
 - Implement **login/logout** with PHP sessions.  
 - Build **user creation form handling**:
   - Regex validation for password strength.  
@@ -63,7 +63,7 @@
 |-------------------|-----------------------------|------------------------------------------------------|
 | **Daena Crosby**  | UI / Frontend               | Build layouts, forms, dashboard, AJAX hooks          |
 | **Tonia Williams**| Database                    | Schema, tables, initial data, queries                |
-| **Alexander Waithe** | Backend (Users)          | Login/logout, user creation, validation, session mgmt|
+| **Alexander Waite** | Backend (Users)          | Login/logout, user creation, validation, session mgmt|
 | **Hector Riettie**| Backend (Contacts/Notes)    | Contact CRUD, filters, notes, AJAX                   |
 
 ---
