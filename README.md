@@ -4,7 +4,7 @@
 1. **Daena Crosby** – Front End  
 2. **Tonia Williams** – Database  
 3. **Alexander Waithe** – Backend (Authentication & User Management)  
-4. **Hector Riettie** – Backend (Contacts & Notes)  
+4. **Hector Riettie (620161458)** – Backend (Contacts & Notes)  
 
 ---
 
