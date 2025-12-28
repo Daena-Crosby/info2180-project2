@@ -19,21 +19,7 @@ if (!isset($_SESSION['user_id'])) {
   <script src="../assets/js/dashboard.js" defer></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="../assets/images/image.png" alt="Dolphin CRM" />
-    </div>
-    <ul class="nav-links">
-      <li><a href="dashboard.php" class="active">Dashboard</a></li>
-      <li><a href="users.php">Users</a></li>
-      <li><a href="add_user.php">New User</a></li>
-      <li><a href="account.php">Account</a></li>
-      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
-    </ul>
-    <div class="actions">
-      <a href="logout.php" class="btn btn-outline">Logout</a>
-    </div>
-  </nav>
+  <?php $activePage = 'dashboard.php'; include '../includes/navbar.php'; ?>
 
   <main class="dashboard">
     <!-- Search + Filters -->

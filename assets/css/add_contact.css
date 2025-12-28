@@ -1,0 +1,77 @@
+@import "base.css";
+
+/* Add Contact Page Styles */
+
+/* Login Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+}
+
+/* Card Layout */
+.card {
+  width: 600px;
+  max-width: 90%;
+}
+
+/* Form Spacing */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input, select {
+  max-width: 200px;
+}
+
+/* Make Email, Telephone, Company fields longer */
+.form-group:nth-child(4) input,
+.form-group:nth-child(5) input,
+.form-group:nth-child(6) input {
+  max-width: 525px;
+}
+
+/* Title, First Name and Last Name in Same Line */
+.form-group:nth-child(1),
+.form-group:nth-child(2),
+.form-group:nth-child(3) {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-group:nth-child(1) {
+  width: 15%;
+  margin-right: 5%;
+}
+
+.form-group:nth-child(2) {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.form-group:nth-child(3) {
+  width: 35%;
+  margin-right: 0;
+}
+
+/* Type and Assigned To in Same Line */
+.form-group:nth-child(7),
+.form-group:nth-child(8) {
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+  vertical-align: top;
+}
+
+.form-group:nth-child(8) {
+  margin-right: 0;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+  background: #f97316;
+  font-weight: bold;
+  color: #fff;
+}

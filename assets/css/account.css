@@ -1,0 +1,65 @@
+@import "base.css";
+
+/* Account Page Styles */
+
+/* Login Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+}
+
+/* Account Container */
+.account-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Card Layout */
+.account-container .card {
+  flex: 1;
+  min-height: 300px;
+}
+
+/* Profile Info */
+.profile-info p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Form Spacing */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input, select {
+  max-width: 300px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+  background: #f97316;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .account-container {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .account-container .card {
+    flex: none;
+    width: 100%;
+    max-width: 600px;
+  }
+}

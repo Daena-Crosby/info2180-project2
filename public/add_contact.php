@@ -59,27 +59,16 @@ $users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
   <meta charset="UTF-8">
   <title>Add Contact</title>
-  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/add_contact.css">
 
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="../assets/images/image.png" alt="Dolphin CRM" />
-    </div>
-    <ul class="nav-links">
-      <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="users.php">Users</a></li>
-      <li><a href="add_user.php">New User</a></li>
-      <li><a href="account.php">Account</a></li>
-      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
-    </ul>
-    <div class="actions">
-      <a href="logout.php" class="btn btn-outline">Logout</a>
-    </div>
-  </nav>
-  <main class="dashboard">
+  <?php $activePage = 'add_contact.php'; include '../includes/navbar.php'; ?>
+  <main class="login-container">
     <div class="card">
+      <div class="card-header">
+        <h1>Add Contact</h1>
+      </div>
       <div class="card-content">
         <?php if ($error): ?><div class="error"><?= htmlspecialchars($error) ?></div><?php endif; ?>
         <?php if ($success): ?><div class="success"><?= htmlspecialchars($success) ?></div><?php endif; ?>

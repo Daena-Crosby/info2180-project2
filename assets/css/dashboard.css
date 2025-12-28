@@ -1,71 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import "base.css";
 
-body {
-  font-family: 'Raleway', sans-serif;
-  background: #ffffff;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+/* Dashboard Page Styles */
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  color: #333;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 1rem;
-}
-
-.nav-links a {
-  color: #333;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
-.nav-links a:hover {
-  background: #2563eb;
-  color: #fff;
-}
-
-.nav-links a.active {
-  background: #f97316;
-  color: #fff;
-}
-
-.actions .btn {
-  margin-left: 1rem;
-}
-
+/* Dashboard Container */
 .dashboard {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Filters Section */
 .filters {
   display: flex;
   justify-content: space-between;
@@ -101,6 +45,7 @@ body {
   color: #fff;
 }
 
+/* Contacts Table */
 .contacts table {
   width: 100%;
   border-collapse: collapse;
@@ -117,34 +62,12 @@ body {
 }
 
 .contacts th {
-  background: #f8f9fa;
+  background: #f97316;
   font-weight: bold;
+  color: #fff;
 }
 
-.users table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.users th, .users td {
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-}
-
-.users th {
-  background: #f8f9fa;
-  font-weight: bold;
-}
-
-.users tr:hover {
-  background: #f1f1f1;
-}
-
+/* Badge Styles */
 .badge {
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -160,47 +83,8 @@ body {
   background: #dc3545;
 }
 
-.btn {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  font-size: 0.9rem;
-  transition: background 0.3s;
-}
-
-.btn-primary {
-  background: #f97316;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #ea580c;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid #2563eb;
-  color: #2563eb;
-}
-
-.btn-outline:hover {
-  background: #2563eb;
-  color: #fff;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .nav-links {
-    margin: 1rem 0;
-  }
-
   .filters {
     flex-direction: column;
     gap: 1rem;
@@ -214,23 +98,4 @@ body {
     padding: 0.5rem;
     font-size: 0.9rem;
   }
-}
-
-/* Profile Info */
-.profile-info p {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-/* Login Container */
-.login-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 80px);
-}
-
-.btn-outline:hover {
-  background: #ff9800;
-  color: #fff;
 }

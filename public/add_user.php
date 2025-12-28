@@ -54,25 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Add User</title>
-    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/new_user.css">
 
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="../assets/images/image.png" alt="Dolphin CRM" />
-    </div>
-    <ul class="nav-links">
-      <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="users.php">Users</a></li>
-      <li><a href="add_user.php" class="active">New User</a></li>
-      <li><a href="account.php">Account</a></li>
-      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
-    </ul>
-    <div class="actions">
-      <a href="logout.php" class="btn btn-outline">Logout</a>
-    </div>
-  </nav>
+  <?php $activePage = 'add_user.php'; include '../includes/navbar.php'; ?>
   <main class="login-container">
     <div class="card">
       <div class="card-header">

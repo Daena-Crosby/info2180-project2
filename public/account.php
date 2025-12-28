@@ -49,59 +49,53 @@ $user = $stmt->fetch();
 <head>
   <meta charset="UTF-8">
   <title>Account - Dolphin CRM</title>
-  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/account.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="../assets/images/image.png" alt="Dolphin CRM" />
-    </div>
-    <ul class="nav-links">
-      <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="users.php">Users</a></li>
-      <li><a href="add_user.php">New User</a></li>
-      <li><a href="account.php" class="active">Account</a></li>
-      <li><a href="add_contact.php" class="btn btn-primary">+ Add Contact</a></li>
-    </ul>
-    <div class="actions">
-      <a href="logout.php" class="btn btn-outline">Logout</a>
-    </div>
-  </nav>
+  <?php $activePage = 'account.php'; include '../includes/navbar.php'; ?>
 
-  <main class="dashboard">
-    <div class="card">
-      <div class="card-header">
-        <h1>Account Information</h1>
-      </div>
-      <div class="card-content">
-        <div class="profile-info">
-          <p><strong>Name:</strong> <?= htmlspecialchars($user['firstname'] . ' ' . $user['lastname']) ?></p>
-          <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
-          <p><strong>Role:</strong> <?= htmlspecialchars($user['role']) ?></p>
+  <main class="login-container">
+    <div class="account-container">
+      <div class="card">
+        <div class="card-header">
+          <h1>Profile Information</h1>
         </div>
-
-        <h2>Change Password</h2>
-        <?php if ($error): ?><div class="error"><?= htmlspecialchars($error) ?></div><?php endif; ?>
-        <?php if ($success): ?><div class="success"><?= htmlspecialchars($success) ?></div><?php endif; ?>
-
-        <form method="POST" action="account.php">
-          <div class="form-group">
-            <label for="current_password">Current Password:</label>
-            <input type="password" id="current_password" name="current_password" required>
+        <div class="card-content">
+          <div class="profile-info">
+            <p><strong>Name:</strong> <?= htmlspecialchars($user['firstname'] . ' ' . $user['lastname']) ?></p>
+            <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
+            <p><strong>Role:</strong> <?= htmlspecialchars($user['role']) ?></p>
           </div>
+        </div>
+      </div>
 
-          <div class="form-group">
-            <label for="new_password">New Password:</label>
-            <input type="password" id="new_password" name="new_password" required>
-          </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>Change Password</h1>
+        </div>
+        <div class="card-content">
+          <?php if ($error): ?><div class="error"><?= htmlspecialchars($error) ?></div><?php endif; ?>
+          <?php if ($success): ?><div class="success"><?= htmlspecialchars($success) ?></div><?php endif; ?>
 
-          <div class="form-group">
-            <label for="confirm_password">Confirm New Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
-          </div>
+          <form method="POST" action="account.php">
+            <div class="form-group">
+              <label for="current_password">Current Password:</label>
+              <input type="password" id="current_password" name="current_password" required>
+            </div>
 
-          <button type="submit" class="btn">Update Password</button>
-        </form>
+            <div class="form-group">
+              <label for="new_password">New Password:</label>
+              <input type="password" id="new_password" name="new_password" required>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm_password">Confirm New Password:</label>
+              <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+
+            <button type="submit" class="btn">Update Password</button>
+          </form>
+        </div>
       </div>
     </div>
   </main>

@@ -1,62 +1,36 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
+@import "base.css";
+
+/* Users Page Styles */
+
+/* Dashboard Container (shared with dashboard page) */
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ff9800;
-  color: #fff;
-  padding: 1rem 2rem;
-}
-
-.topbar h2 {
-  margin: 0;
-}
-
-.topbar nav a {
-  margin-left: 0.5rem;
-}
-
-table {
+/* Users Table */
+.users table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem auto;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-th, td {
-  padding: 0.75rem;
-  border-bottom: 1px solid #ddd;
+.users th, .users td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
   text-align: left;
 }
 
-tr:hover {
+.users th {
+  font-weight: bold;
+  background: #f97316;
+  color: #fff;
+}
+
+.users tr:hover {
   background: #f1f1f1;
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  background: #ff9800;
-  color: #fff;
-  border: 1px solid #ff9800;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #e68900;
-  color: #fff;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
 }
